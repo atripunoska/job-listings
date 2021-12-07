@@ -5,4 +5,11 @@
   padding: 20px 30px;
   margin-bottom: 30px;
   box-shadow: 4px 6px 10px 1px #e3e3e3;
+  &__logo {
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
 }
