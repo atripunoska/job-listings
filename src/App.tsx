@@ -1,6 +1,6 @@
 import { useState } from "react";
 import JobListingCard from "./components/JobListingCard";
-import data from "../data.json";
+import data from "./data.json";
 
 function App() {
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
