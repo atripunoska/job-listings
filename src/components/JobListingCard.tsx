@@ -18,7 +18,7 @@ const JobListingCard = ({ ...props }: JobListingCardProperties) => {
   return (
     <>
       <div
-        className={`bg-white pt-11 pl-6 pb-6 pr-6 md:p-6 rounded mb-9 md:mb-4 flex flex-col md:flex-row justify-between shadow-xl  md:items-center items-start ${
+        className={`bg-white pt-11 pl-6 pb-6 pr-6 md:p-6 rounded mb-12 md:mb-4 flex flex-col md:flex-row justify-between shadow-xl  md:items-center items-start ${
           props.featured ? "border-l-4 border-dark-cyan" : ""
         }`}
       >
