@@ -41,14 +41,18 @@ const JobListingCard = ({ ...props }: JobListingCardProperties) => {
               </span>
             )}
           </div>
-          <div className="font-bold text-lg">{props.position}</div>
-          <div>
+          <div className="font-bold text-lg hover:text-dark-cyan cursor-pointer">
+            {props.position}
+          </div>
+          <div className="flex items-center">
             <span className="font-medium text-dark-gray-cyan">
               {props.postedAt}
             </span>
+            <span className="size-1 bg-dark-gray-cyan rounded-full mx-2 inline-block"></span>
             <span className="font-medium text-dark-gray-cyan">
               {props.contract}
             </span>
+            <span className="size-1 bg-dark-gray-cyan rounded-full mx-2 inline-block"></span>
             <span className="font-medium text-dark-gray-cyan">
               {props.location}
             </span>
@@ -59,7 +63,7 @@ const JobListingCard = ({ ...props }: JobListingCardProperties) => {
         <div className="my-3 md:hidden  block border-1 bg-very-dark-gray-cyan h-px" />
         {props.tools?.map((tool) => (
           <button
-            className="font-bold px-3 py-2 bg-light-grayish-cyan text-dark-cyan rounded mr-2 md:ml-2"
+            className="font-bold px-3 py-2 bg-light-grayish-cyan text-dark-cyan rounded mr-2 md:ml-2 hover:bg-dark-cyan hover:text-white"
             key={tool}
           >
             {tool}
@@ -68,14 +72,14 @@ const JobListingCard = ({ ...props }: JobListingCardProperties) => {
 
         {props.languages.map((l) => (
           <button
-            className="font-bold px-3 py-2 bg-light-grayish-cyan text-dark-cyan rounded mr-2 md:ml-2 my-2"
+            className="font-bold px-3 py-2 bg-light-grayish-cyan text-dark-cyan rounded mr-2 md:ml-2 my-2 hover:bg-dark-cyan hover:text-white"
             key={l}
           >
             {l}
           </button>
         ))}
 
-        <button className="font-bold px-3 py-2 bg-light-grayish-cyan text-dark-cyan rounded mr-2 md:ml-2">
+        <button className="font-bold px-3 py-2 bg-light-grayish-cyan text-dark-cyan rounded mr-2 md:ml-2 hover:bg-dark-cyan hover:text-white">
           {props.level}
         </button>
       </div>
